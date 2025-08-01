@@ -13,5 +13,5 @@ $(document).ready(function() {
         e.preventDefault();
         $(".menu-product-bar").slideToggle();
     });
-   
+ 
 });
