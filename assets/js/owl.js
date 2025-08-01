@@ -8,7 +8,7 @@ $(document).ready(function() {
       loop: true, 
       dots: true, 
       autoplay: true,
-      autoplayTimeout: 1000,
+      autoplayTimeout: 10000,
       autoplayHoverPause: true
     });
 	
