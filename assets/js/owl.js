@@ -4,11 +4,11 @@ $(document).ready(function() {
     // owl carousel banner slider
    
      $(".img-banner").owlCarousel({
-      items: 1, 
+      items: 2, 
       loop: true, 
       dots: true, 
       autoplay: true,
-      autoplayTimeout: 1000,
+      autoplayTimeout: 2000,
       autoplayHoverPause: true
     });
 	

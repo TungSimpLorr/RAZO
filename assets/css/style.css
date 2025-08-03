@@ -106,20 +106,16 @@ header {
 
 
 .box-img {
-    width: 88%;
-    height: 550px;
+    width: 76%;
+    height: 200px;
     background-color: rgb(148, 62, 62);
     margin: 0 auto;
-    border-radius: 15px;
-    margin-top: 5%;
-    margin-left: 6%;
+    margin-top: 10%;
+   
 }
 .box-img img {
-    width: 88%;
     height: 100%;
     object-fit: cover;
-    border-top-left-radius:15px;
-    border-top-right-radius:15px;
 }
 
 .introduce {
@@ -171,26 +167,28 @@ header {
 {
     display: flex;
     flex-wrap: wrap;
-    gap : 2px ;
+    gap : 5px;
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     padding: 10px;
+    justify-content: space-between;
 }
 
 .item-bestseller
 {  
-    flex : 0 0 49%;
+    flex : 0 0 31%;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(221, 221, 221);
     color: rgb(0, 0, 0);
+    
+    
 }
 .item-bestseller img {
     width: 100%;
-    height: 60%;
+    height: 55%;
     object-fit: cover;
-    background-color: blue;
 }
 .item-bestseller .btn 
 {
