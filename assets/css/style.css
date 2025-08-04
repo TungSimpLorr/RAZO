@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(58, 58, 58);
+    background-color: rgb(255, 255, 255);
     margin: 0;
 }
 .font {
@@ -10,7 +10,7 @@ body {
     font-weight: bold;
     text-align: center;
     display: flex;
-    margin: 0 auto;
+  
 }
 a
 {
@@ -106,26 +106,51 @@ header {
 
 
 .box-img {
-    width: 76%;
-    height: 200px;
+    width: 90%;
+    height: 500px;
     background-color: rgb(148, 62, 62);
     margin: 0 auto;
     margin-top: 10%;
+    position: relative;
    
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
 }
 .box-img img {
     height: 100%;
     object-fit: cover;
 }
 
+
+button.owl-prev,
+button.owl-next {
+    width: 80px; 
+    height: 100px; 
+    font-size: 24px; 
+    cursor: pointer;
+    pointer-events: auto; 
+  
+}
 .introduce {
     width: 88%;
     height: 150px;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(214, 214, 214);
     margin: 0 auto;
     border-bottom-left-radius:15px;
     border-bottom-right-radius:15px;
     margin-top: 0;
+}
+.video-introduce {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .introduce h2 {
     display: flex;
@@ -136,7 +161,7 @@ header {
     padding-top: 10px;
 }
 .btn {
-    width: 120px;
+    width: 150px;
     height: 30px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -147,11 +172,9 @@ header {
     font-size: 14px;
 }
 .btn:hover {
-    background-color: rgb(92, 90, 90);
+    background-color: rgb(0, 0, 0);
+    color: white;
     cursor: pointer;
-    width: 150px;
-    height: 30px;
-    transition: all 0.1s ease-in-out;
 }
 
 .catalogue
@@ -275,4 +298,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.title > .title-prev , .title > .title-next {
+    font-size: 24px;
+    color: black;
+    margin-top: 10px;
+}
+.title > .title-prev 
+{
+    cursor: pointer;
+    padding-left: 20px;
+}
+.title > .title-next
+{
+    cursor: pointer;
+    padding-right: 20px;
+}
+.title-next:hover, .title-prev:hover {
+    color: rgb(90, 90, 90);
 }

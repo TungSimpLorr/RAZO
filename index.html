@@ -41,7 +41,7 @@
                             <i class="fa-solid fa-house"></i> Trang chủ
                         </a></li>
 
-                    <li style="display: flex ; "> <a href="#"> <i class="fa-solid fa-shirt"></i> Sản phẩm </a> <i
+                    <li style="display: flex ; "> <a href="/public/products.html"> <i class="fa-solid fa-shirt"></i> Sản phẩm </a> <i
                             class="fa-solid fa-plus catalogue-icon" style=" cursor: pointer;"></i>
                         <ul class="menu-product-bar" style="display: flex; flex-direction: column;">
                             <li><a href="#">Hoodie </a></li>
@@ -53,7 +53,7 @@
                         </ul>
 
                     </li>
-                    <li><a href="#"> <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                    <li><a href="/public/cartDetail.html"> <i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
                     <li><a href="#"> <i class="fa-solid fa-user" style="padding-left: 1%;"></i> Đăng ký - Đăng nhập</a>
                     </li>
                     <li><a href="#"><i class="fa-solid fa-phone" style="padding-left: 1%;"></i> Liên hệ</a></li>
@@ -76,45 +76,19 @@
             <!-- Introduce -->
             <div class="introduce">
                 <h2>Cùng RAZO nâng tầm phong cách của bạn</h2>
-                <a href="#" class="btn">Khám phá ngay</a>
+                <a href="#" class="btn">Đến trang sản phẩm</a>
             </div>
 
-            <!-- Catalogue -->
-            <div style="background-color: white; width: 100%; height: 100%;">
-
-                <h2 style="text-align: center; padding-top: 10px;">Danh mục</h2>
-                <hr style="width: 30%; margin: 0 auto; border: 1px solid black; margin-bottom: 5%;">
-                <div class="catalogue font">
-                    <div class="item">
-                        <h2>Hoodie </h2><img src="./assets/images/ctl-hoodie.jpg" alt="Banner Image" />
-                    </div>
-                    <div class="item">
-                        <h2>Shirt </h2><img src="./assets/images/ctl-shirt.jpg" alt="Banner Image" />
-                    </div>
-                    <div class="item">
-                        <h2>Sweater</h2><img src="./assets/images/ctl-sweater.jpg" alt="Banner Image" />
-                    </div>
-                    <div class="item">
-                        <h2>Cap </h2><img src="./assets/images/ctl-cap.jpg" alt="Banner Image" />
-                    </div>
-                    <div class="item">
-                        <h2>Baggy </h2><img src="./assets/images/ctl-baggy.jpg" alt="Banner Image" />
-                    </div>
-                    <div class="item">
-                        <h2>Shoes </h2><img src="./assets/images/ctl-shoes.jpg" alt="Banner Image" />
-                    </div>
-
-
-                </div>
-
-
-            </div>
 
 
             <!-- Bestsellers -->
             <div style="background-color: white; width: 100%; height: 100%;">
-
-                <h2 style="text-align: center; padding-top: 10px;">Sản phẩm nổi bật</h2>
+                <div class="title">
+                    <i class="fa-sharp-duotone fa-solid fa-arrow-left title-prev"></i>
+                      <h2 id="product-title" style="text-align: center; padding-top: 10px; font-size: 18px;">Sản phẩm nổi bật</h2>
+                      <i class="fa-sharp-duotone fa-solid fa-arrow-right title-next"></i>
+                </div>
+              
                 <hr style="width: 30%; margin: 0 auto; border: 1px solid black; margin-bottom: 5%;">
                 <div class="bestseller font">
                     <div class="item-bestseller">
@@ -176,15 +150,44 @@
                 </div>
             </div>
 
-        </div>
-        <div style="height: 50px; background-color: rgb(255, 255, 255); padding-top: 5px;"><div class="btn" style=" background-color: black; width: 50%; height : 30px; "> <a href="#" style="color: white;"> Đến trang sản phẩm</a></div></div>
-        <div class="mg" style="background-color: black;"></div>
-        <div class="introduce" style="background-color: white; width: 100%; height: 100%; border-radius: 0; padding: 5px;">
-            <h2>Giới thiệu về RAZO</h2>
-            <p>RAZO là thương hiệu thời trang hàng đầu, chuyên cung cấp các sản phẩm thời trang chất lượng cao với thiết kế hiện đại và giá cả phải chăng. Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời nhất.</p>
-            
+            <!-- Catalogue -->
+            <div style="background-color: white; width: 100%; height: 100%;">
 
+                <h2 style="text-align: center; padding-top: 10px;">Danh mục</h2>
+                <hr style="width: 30%; margin: 0 auto; border: 1px solid black; margin-bottom: 5%;">
+                <div class="catalogue font">
+                    <div class="item">
+                        <h2>Hoodie </h2><img src="./assets/images/ctl-hoodie.jpg" alt="Banner Image" />
+                    </div>
+                    <div class="item">
+                        <h2>Shirt </h2><img src="./assets/images/ctl-shirt.jpg" alt="Banner Image" />
+                    </div>
+                    <div class="item">
+                        <h2>Sweater</h2><img src="./assets/images/ctl-sweater.jpg" alt="Banner Image" />
+                    </div>
+                    <div class="item">
+                        <h2>Cap </h2><img src="./assets/images/ctl-cap.jpg" alt="Banner Image" />
+                    </div>
+                    <div class="item">
+                        <h2>Baggy </h2><img src="./assets/images/ctl-baggy.jpg" alt="Banner Image" />
+                    </div>
+                    <div class="item">
+                        <h2>Shoes </h2><img src="./assets/images/ctl-shoes.jpg" alt="Banner Image" />
+                    </div>
+
+
+                </div>
+
+
+            </div>
         </div>
+        <div class="mg" style="background-color: black;"></div>
+        <div class="introduce" style="background-color: white; width: 100%; height: 100%; border-radius: 0;">
+            <h2 style=" display: flex; justify-content: center;">Giới thiệu về RAZO</h2>
+            <p>RAZO là thương hiệu thời trang hàng đầu, chuyên cung cấp các sản phẩm thời trang chất lượng cao với thiết kế hiện đại và giá cả phải chăng. Chúng tôi cam kết mang đến cho khách hàng những trải nghiệm mua sắm tuyệt vời nhất.</p>
+            <video src="./assets/images/balenciaga.mp4" class="video-introduce" autoplay loop muted ></video>
+        </div>
+       
         <div class="mg" style="background-color: black;"></div>
     </main>
 
@@ -192,13 +195,14 @@
         <div class="footer-content">
             <div class="footer-item">
                <h2>Theo dõi chúng tôi trên các diễn đàn</h2>
-                <div class="social-icons">
+                <div class="social-icons" style="display: flex; justify-content: center; gap: 20px;">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
+            <hr style="width: 30%; margin: 0 auto; border: 1px solid black; margin-top: 20px;">
             <div class="footer-item">
                 <h2>Liên hệ</h2>
                 <p><b>Email</b>:abc@gmail.com</p>
